@@ -1,0 +1,14 @@
+@host=http://localhost:4000
+###
+POST {{host}}/login
+Content-Type: application/json
+
+{
+    "email": "alò@ehi.eilà",
+    "password": "eilà"
+}
+
+###
+GET {{host}}/me
+Authorization: Bearer 
+Content-Type: application/json
